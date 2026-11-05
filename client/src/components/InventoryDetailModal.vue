@@ -186,13 +186,13 @@ const getSummaryCardClass = () => {
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  padding: 1rem;
+  padding: var(--space-4);
 }
 
 .modal-container {
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
   max-width: 700px;
   width: 100%;
   max-height: 90vh;
@@ -205,12 +205,12 @@ const getSummaryCardClass = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: var(--space-6);
   border-bottom: 1px solid #e2e8f0;
 }
 
 .modal-title {
-  font-size: 1.25rem;
+  font-size: var(--text-xl);
   font-weight: 700;
   color: #0f172a;
   letter-spacing: -0.025em;
@@ -221,11 +221,11 @@ const getSummaryCardClass = () => {
   border: none;
   color: #64748b;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: var(--space-2);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   transition: all 0.15s ease;
 }
 
@@ -237,22 +237,22 @@ const getSummaryCardClass = () => {
 .modal-body {
   flex: 1;
   overflow-y: auto;
-  padding: 2rem;
+  padding: var(--space-8);
 }
 
 .item-header {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  padding-bottom: 1.5rem;
+  gap: var(--space-5);
+  padding-bottom: var(--space-6);
   border-bottom: 1px solid #e2e8f0;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-6);
 }
 
 .item-icon {
   width: 64px;
   height: 64px;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,22 +278,22 @@ const getSummaryCardClass = () => {
 }
 
 .item-name {
-  font-size: 1.5rem;
+  font-size: var(--text-2xl);
   font-weight: 700;
   color: #0f172a;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 var(--space-2) 0;
 }
 
 .item-sku {
-  font-size: 0.875rem;
+  font-size: var(--text-base);
   color: #64748b;
   font-family: 'Monaco', 'Courier New', monospace;
 }
 
 .stock-badge {
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.875rem;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-base);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -318,13 +318,13 @@ const getSummaryCardClass = () => {
 .stock-summary {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
 }
 
 .summary-card {
-  padding: 1.25rem;
-  border-radius: 10px;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
   border: 2px solid;
 }
 
@@ -349,40 +349,40 @@ const getSummaryCardClass = () => {
 }
 
 .summary-label {
-  font-size: 0.813rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #64748b;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-2);
 }
 
 .summary-value {
-  font-size: 1.875rem;
+  font-size: var(--text-3xl);
   font-weight: 700;
   color: #0f172a;
 }
 
 .summary-subtitle {
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   color: #64748b;
-  margin-top: 0.25rem;
+  margin-top: var(--space-1);
 }
 
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: var(--space-5);
 }
 
 .info-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
 
 .info-label {
-  font-size: 0.813rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -390,32 +390,32 @@ const getSummaryCardClass = () => {
 }
 
 .info-value {
-  font-size: 0.938rem;
+  font-size: var(--text-md);
   color: #0f172a;
   font-weight: 500;
 }
 
 .info-value.total-value {
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
   color: #2563eb;
   font-weight: 700;
 }
 
 .modal-footer {
-  padding: 1.5rem;
+  padding: var(--space-6);
   border-top: 1px solid #e2e8f0;
   display: flex;
   justify-content: flex-end;
-  gap: 0.75rem;
+  gap: var(--space-3);
 }
 
 .btn-secondary {
-  padding: 0.625rem 1.25rem;
+  padding: var(--space-3) var(--space-5);
   background: #f1f5f9;
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: var(--text-base);
   color: #334155;
   cursor: pointer;
   transition: all 0.15s ease;

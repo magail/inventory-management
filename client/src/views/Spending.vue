@@ -493,11 +493,11 @@ export default {
 
 <style scoped>
 .stat-change {
-  margin-top: 0.75rem;
-  font-size: 0.875rem;
+  margin-top: var(--space-3);
+  font-size: var(--text-base);
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: var(--space-1);
 }
 
 .stat-change.positive {
@@ -510,23 +510,23 @@ export default {
 
 .change-icon {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: var(--text-md);
 }
 
 .chart-card {
-  margin-bottom: 1.75rem;
+  margin-bottom: var(--space-8);
 }
 
 .chart-legend {
   display: flex;
-  gap: 1.5rem;
-  font-size: 0.875rem;
+  gap: var(--space-6);
+  font-size: var(--text-base);
 }
 
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-2);
   color: #64748b;
 }
 
@@ -546,8 +546,8 @@ export default {
 .stats-grid-finance {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
 }
 
 .revenue-card {
@@ -563,8 +563,8 @@ export default {
 }
 
 .stat-meta {
-  margin-top: 0.5rem;
-  font-size: 0.813rem;
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
   color: #64748b;
 }
 
@@ -584,13 +584,13 @@ export default {
   justify-content: center;
   align-items: flex-end;
   height: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: var(--space-8);
 }
 
 .revenue-bar, .cost-bar {
   width: 50%;
   max-width: 30px;
-  border-radius: 6px 6px 0 0;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   transition: all 0.3s ease;
   cursor: pointer;
   min-height: 4px;
@@ -610,12 +610,12 @@ export default {
 }
 
 .chart-container {
-  padding: 1.5rem 0;
+  padding: var(--space-6) 0;
 }
 
 .bar-chart {
   display: flex;
-  gap: 1.5rem;
+  gap: var(--space-6);
   height: 350px;
 }
 
@@ -623,8 +623,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-right: 1rem;
-  font-size: 0.75rem;
+  padding-right: var(--space-4);
+  font-size: var(--text-xs);
   color: #94a3b8;
   border-right: 1px solid #e2e8f0;
 }
@@ -634,7 +634,7 @@ export default {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
 
 .bar-group {
@@ -652,7 +652,7 @@ export default {
   flex-direction: column-reverse;
   align-items: stretch;
   height: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: var(--space-8);
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
@@ -669,11 +669,11 @@ export default {
 }
 
 .bar-segment:first-child {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
 
 .bar-segment:last-child {
-  border-radius: 6px 6px 0 0;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
 }
 
 .bar-segment.procurement { background: #3b82f6; }
@@ -686,8 +686,8 @@ export default {
 }
 
 .bar-label {
-  margin-top: 0.5rem;
-  font-size: 0.75rem;
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
   font-weight: 600;
   color: #64748b;
 }
@@ -695,19 +695,19 @@ export default {
 .two-column-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 1.75rem;
+  gap: var(--space-5);
 }
 
 .category-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--space-6);
 }
 
 .category-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
 
 .category-info {
@@ -724,28 +724,28 @@ export default {
 .category-amount {
   font-weight: 700;
   color: #2563eb;
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
 }
 
 .category-bar-container {
   width: 100%;
   height: 8px;
   background: #f1f5f9;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
 }
 
 .category-bar {
   height: 100%;
   background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   transition: width 0.6s ease;
 }
 
 .category-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 0.813rem;
+  font-size: var(--text-sm);
 }
 
 .percentage {
@@ -788,10 +788,10 @@ export default {
 
 .transactions-table th {
   text-align: left;
-  padding: 0.625rem 0.75rem;
+  padding: var(--space-3) var(--space-3);
   font-weight: 600;
   color: #475569;
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-bottom: 1px solid #e2e8f0;
@@ -802,9 +802,9 @@ export default {
 }
 
 .transactions-table td {
-  padding: 0.75rem 0.75rem;
+  padding: var(--space-3) var(--space-3);
   border-bottom: 1px solid #f1f5f9;
-  font-size: 0.875rem;
+  font-size: var(--text-base);
 }
 
 .transactions-table tbody tr {
@@ -824,7 +824,7 @@ export default {
   color: #64748b;
   font-weight: 500;
   font-family: 'Monaco', 'Courier New', monospace;
-  font-size: 0.813rem;
+  font-size: var(--text-sm);
 }
 
 .transaction-description {
@@ -838,7 +838,7 @@ export default {
 
 .transaction-date {
   color: #64748b;
-  font-size: 0.813rem;
+  font-size: var(--text-sm);
 }
 
 .transaction-amount {

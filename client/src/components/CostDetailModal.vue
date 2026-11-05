@@ -161,13 +161,13 @@ const close = () => {
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  padding: 1rem;
+  padding: var(--space-4);
 }
 
 .modal-container {
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
   max-width: 600px;
   width: 100%;
   max-height: 90vh;
@@ -180,12 +180,12 @@ const close = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: var(--space-6);
   border-bottom: 1px solid #e2e8f0;
 }
 
 .modal-title {
-  font-size: 1.25rem;
+  font-size: var(--text-xl);
   font-weight: 700;
   color: #0f172a;
   letter-spacing: -0.025em;
@@ -196,11 +196,11 @@ const close = () => {
   border: none;
   color: #64748b;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: var(--space-2);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   transition: all 0.15s ease;
 }
 
@@ -212,16 +212,16 @@ const close = () => {
 .modal-body {
   flex: 1;
   overflow-y: auto;
-  padding: 2rem;
+  padding: var(--space-8);
 }
 
 .cost-summary {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-8);
 }
 
 .summary-card {
-  padding: 1.5rem;
-  border-radius: 10px;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
   text-align: center;
 }
 
@@ -231,28 +231,28 @@ const close = () => {
 }
 
 .summary-label {
-  font-size: 0.875rem;
+  font-size: var(--text-base);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   opacity: 0.9;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-2);
 }
 
 .summary-value {
-  font-size: 2.25rem;
+  font-size: var(--text-3xl);
   font-weight: 700;
 }
 
 .cost-breakdown {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .cost-item {
-  padding: 1.25rem;
-  border-radius: 10px;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
   border: 2px solid;
 }
 
@@ -279,14 +279,14 @@ const close = () => {
 .cost-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
+  gap: var(--space-4);
+  margin-bottom: var(--space-2);
 }
 
 .cost-icon {
   width: 48px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,36 +320,36 @@ const close = () => {
 .cost-name {
   font-weight: 600;
   color: #0f172a;
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
+  font-size: var(--text-md);
+  margin-bottom: var(--space-1);
 }
 
 .cost-amount {
-  font-size: 1.5rem;
+  font-size: var(--text-2xl);
   font-weight: 700;
   color: #0f172a;
 }
 
 .cost-percentage {
-  font-size: 0.875rem;
+  font-size: var(--text-base);
   color: #64748b;
   font-weight: 500;
 }
 
 .modal-footer {
-  padding: 1.5rem;
+  padding: var(--space-6);
   border-top: 1px solid #e2e8f0;
   display: flex;
   justify-content: flex-end;
 }
 
 .btn-secondary {
-  padding: 0.625rem 1.25rem;
+  padding: var(--space-3) var(--space-5);
   background: #f1f5f9;
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: var(--text-base);
   color: #334155;
   cursor: pointer;
   transition: all 0.15s ease;
